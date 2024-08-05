@@ -21,9 +21,10 @@ create table program (
   category_id int unsigned not null
 );
 
-create table category (
-  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  name VARCHAR(100) NOT NULL
+CREATE TABLE category (
+  id INT UNSIGNED PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL UNIQUE
 );
+
 
 
