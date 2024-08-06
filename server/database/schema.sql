@@ -11,6 +11,11 @@ create table item (
   foreign key(user_id) references user(id)
 );
 
+create table category (
+  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  name VARCHAR(100) NOT NULL
+);
+
 create table program (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
   title VARCHAR(100) NOT NULL,
@@ -22,9 +27,5 @@ create table program (
   foreign key(category_id) references category(id)
 );
 
-create table category (
-  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  name VARCHAR(100) NOT NULL
-);
 
 
