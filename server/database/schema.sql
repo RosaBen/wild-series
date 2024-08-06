@@ -18,7 +18,8 @@ create table program (
   poster VARCHAR(255) NOT NULL,
   country VARCHAR(100) NOT NULL,
   year INT NOT NULL,
-  category_id int unsigned not null
+  category_id int unsigned not null,
+  foreign key(category_id) references category(id)
 );
 
 create table category (
